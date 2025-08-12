@@ -4,7 +4,7 @@ import funcionarios from "./funcionarios.json" with {type: "json"}
 
 console.log(funcionarios.cargo)
 
-function criarPerfil (funcionarios){
+function criarPerfil (funcionario){
 
     const body = document.querySelector('body')
 
@@ -12,12 +12,13 @@ function criarPerfil (funcionarios){
     conteiner.className = 'conteiner'
 
     const foto = document.createElement('img')
+
     const nome = document.createElement('span')
     const cargo = document.createElement('p')
 
-    foto.src = funcionarios.imagem
-    nome.textContent = funcionarios.nome
-    cargo.textContent = funcionarios.cargo
+    foto.src = `./img/${funcionario.imagem}`
+    nome.textContent = funcionario.nome
+    cargo.textContent = funcionario.cargo
 
 
     body.appendChild(conteiner)
