@@ -1,0 +1,37 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: rgb(245, 242, 242);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+
+    }
+
+
+    .conteiner{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 8%;
+        box-shadow: 5px 5px 5px lightgray;
+
+
+    }
+
+    .conteiner img{
+        max-width: 100%;
+        width: 100px;
+        height: 130px;
+        border-radius: 80%;
+    }
